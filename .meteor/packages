@@ -39,7 +39,7 @@ aldeed:collection2
 audit-argument-checks
 
 # Adds support for specifying browser-level security rules related to content and what’s allowed to load on the page.
-browser-policy
+#browser-policy
 
 # Allows for checking the structure and types of arguments passed to Meteor methods and publications.
 check
@@ -100,4 +100,4 @@ meteortoys:allthings
 
 # Bootstrap Elements as React Components
 # See: https://react-bootstrap.github.io/components.html
-universe:react-bootstrap
+shadyendless:react-bootstrap

@@ -47,25 +47,21 @@ Login = React.createClass({
       label: 'Forget Password?'
     };
 
-    return <GridRow>
-      <GridColumn className="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-        <PageHeader size="h4" label="Log In" />
-        <InfoAlert>
-          To access the demo, you can use the email address <strong>admin@admin.com</strong> and the password <strong>password</strong>.
-        </InfoAlert>
-        <Form ref="loginForm" id="login" className="login" validations={ this.validations() } onSubmit={ this.handleSubmit }>
-          <FormGroup>
-            <EmailInput ref="emailAddress" showLabel={ true } />
-          </FormGroup>
-          <FormGroup>
-            <PasswordInput ref="password" showLabel={ true } labelLink={ passwordLabelLink } />
-          </FormGroup>
-          <FormGroup>
-            <SuccessButton type="submit" label="Login" />
-          </FormGroup>
-        </Form>
-        <p>Don't have an account? <a href="/signup">Sign Up</a>.</p>
-      </GridColumn>
-    </GridRow>;
+    return <Grid>
+	  <Row>
+        <Col xs={12} sm={6} md={5} lg={4}>
+		  <PageHeader size="h4" label="Log In" />
+	      <Alert bsStyle="danger">
+	        To access the demo, you can use the email address <strong>admin@admin.com</strong> and the password <strong>password</strong>.
+	      </Alert>
+	      <form ref="loginForm" id="login" className="login" validations={ this.validations() } onSubmit={ this.handleSubmit }>
+	        <Input ref="emailAddress" type="email" label="Email Address" placeholder="Enter Email"/>
+	        <Input ref="password" type="password" label="Password" placeholder="Enter Password" />
+			<ButtonInput bsStyle="success" type="submit">Login</ButtonInput>
+	      </form>
+	      <p>Don't have an account? <a href="/signup">Sign Up</a>.</p>
+		</Col>
+	  </Row>
+    </Grid>;
   }
 });
