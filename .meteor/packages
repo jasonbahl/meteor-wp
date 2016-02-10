@@ -1,0 +1,96 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+standard-minifiers      # JS/CSS minifiers run for production mode
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+ecmascript              # Enable ECMAScript2015+ syntax in app code
+
+autopublish             # Publish all data to the clients (for prototyping)
+insecure                # Allow all DB writes from clients (for prototyping)
+react
+
+# Added based on The Meteor Chef's "Base" Recommendations
+# See: https://themeteorchef.com/base/packages-included/
+# Note: Not ALL packages used in BASE have been added, but a lot have
+
+# The basic user account system for Meteor application written by the Meteor Development Group.
+# Enables support for adding each of the accounts packages.
+accounts-base
+
+# Adds support for email/username and password based accounts in our application.
+accounts-password
+
+# This package gives us support for adding schemas to our collections and managing server-side validation of our database operations.
+aldeed:collection2
+
+# Used in combination with the Check package for checking the structure and types of arguments passed to Meteor methods and publications.
+# Automatically alerts when a method or publication does not use a check() call.
+audit-argument-checks
+
+# Adds support for specifying browser-level security rules related to content and what’s allowed to load on the page.
+browser-policy
+
+# Allows for checking the structure and types of arguments passed to Meteor methods and publications.
+check
+
+# Used for generating fake data.
+digilord:faker
+
+# Adds support for compiling stylesheets written with Sass—a CSS extension language—into plain CSS.
+fourseven:scss
+
+# Used in conjunction with the kadira:flow-router package for rendering Blaze templates within the router.
+kadira:blaze-layout
+
+# The client-side routing solution of choice.
+# Allows for easy swapping of user interface frameworks (e.g. swapping Blaze for React or Angular) in Meteor.
+kadira:flow-router
+
+# Enables an effect similar to server-side rendering improving the initial loading speed of a Meteor application while retaining Meteor’s data-on-the-wire approach.
+meteorhacks:fast-render
+
+# Used for quickly adding NPM packages for use on the server.
+# SEE: https://themeteorchef.com/snippets/using-npm-packages
+meteorhacks:npm
+
+# Adds server-side rendering functionality for rendering Blaze templates on the server.
+# Note: this package does not add server-side rendering support to Meteor.
+# It is used for manually compiling templates on the server (e.g. rendering handlebars templates for use with HTML email).
+# SEE: https://themeteorchef.com/snippets/using-the-email-package
+meteorhacks:ssr
+
+# Core package used to add support for reactive dictionaries.
+# SEE: https://themeteorchef.com/snippets/reactive-dict-reactive-vars-and-session-variables/#tmc-reactive-dictionary
+reactive-dict
+
+# Core package used to add support for reactive variables.
+# See: https://themeteorchef.com/snippets/reactive-dict-reactive-vars-and-session-variables/#tmc-reactive-variables
+reactive-var
+
+# Adds support for the Lodash JavaScript utility library.
+stevezhu:lodash
+
+# Core package that adds support for compiling HTML templates. Also adds support for Blaze, the user interface framework by the Meteor Development Grou
+templating
+
+# A wrapper package used to include the jQuery validation library, used for client-side validation of forms.
+themeteorchef:jquery-validation
+
+# Adds support for the Bootstrap front-end framework.
+twbs:bootstrap
+
+
+
+npm-container
+meteortoys:allthings

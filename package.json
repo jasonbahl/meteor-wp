@@ -1,0 +1,10 @@
+{
+  "name": "Rubix",
+  "version": "0.0.1",
+  "description": "Rubix dummy app.",
+  "scripts": {
+    "start": "meteor --settings settings-development.json",
+    "staging": "meteor deploy staging.meteor.com --settings settings-development.json",
+    "production": "meteor deploy production.meteor.com --settings settings-production.json"
+  }
+}
