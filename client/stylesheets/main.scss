@@ -1,0 +1,73 @@
+/* REQUIRED: DO NOT REMOVE */
+@import "overrides/variables";
+@import "vendor/bootstrap/bootstrap";
+@import "vendor/sass-list-maps/sass-list-maps";
+
+@import "base/base";
+@import "layout/layout";
+@import "module/module";
+
+/* THIRD-PARTY PLUGINS (CAN BE REMOVED) */
+@import "vendor/prism/prism";
+@import "vendor/ion/tabs";
+@import "vendor/ion/rangeSlider";
+@import "vendor/hubspot/vex";
+@import "vendor/hubspot/messenger";
+@import "vendor/timeline/timeline";
+@import "vendor/bootstrap-slider/bootstrap-slider";
+@import "vendor/xeditable/xeditable";
+@import "vendor/typeahead/typeahead";
+@import "vendor/select2/select2";
+@import "vendor/jquery-steps/jquery-steps";
+@import "vendor/tablesaw/tablesaw";
+@import "vendor/datatables/datatables";
+@import "vendor/fullcalendar/fullcalendar";
+@import "vendor/fullcalendar/fullcalendar-print";
+@import "vendor/nestable/nestable";
+@import "vendor/dropzone/dropzone";
+@import "vendor/jcrop/jcrop";
+@import "vendor/bootstrap-datetimepicker/bootstrap-datetimepicker";
+@import "vendor/c3js/c3js";
+@import "vendor/leaflet/leaflet";
+@import "vendor/blueimp-gallery/blueimp-gallery";
+@import "vendor/trumbowyg/trumbowyg";
+@import "vendor/switchery/switchery";
+
+/* IMPORT PAGE STYLES */
+@import "pages/pages";
+/* IMPORT PRINT STYLES */
+@import "print/print";
+
+html[dir='rtl'] {
+  [class^="icon-"].float-right-rtl,
+  [class*=" icon-"].float-right-rtl {
+    position: relative;
+    /*@noflip*/float: right;
+  }
+}
+
+body {
+  opacity: 1;
+  transition: all 0.7s ease;
+
+  &.fade-out {
+    transition: all 0.25s ease;
+    opacity: 0;
+  }
+}
+
+#app-preloader > .preloader {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: #E9EDF2;
+  z-index: 99999999999;
+}
+#app-preloader > .preloader > img {
+  margin: auto;
+  display: block;
+  margin-top: 150px;
+  position: relative;
+}

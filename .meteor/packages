@@ -53,6 +53,9 @@ fourseven:scss
 # Used in conjunction with the kadira:flow-router package for rendering Blaze templates within the router.
 kadira:blaze-layout
 
+# Used in conjunction with the kadira:flow-router package for rendering React templates within the router.
+kadira:react-layout
+
 # The client-side routing solution of choice.
 # Allows for easy swapping of user interface frameworks (e.g. swapping Blaze for React or Angular) in Meteor.
 kadira:flow-router
@@ -90,7 +93,7 @@ themeteorchef:jquery-validation
 # Adds support for the Bootstrap front-end framework.
 twbs:bootstrap
 
-
-
 npm-container
+
+# Extremely helpful tools for debugging and understanding what's happening in a Meteor application
 meteortoys:allthings
