@@ -127,6 +127,8 @@ tracker@1.0.9
 twbs:bootstrap@3.3.6
 ui@1.0.8
 underscore@1.0.4
+universe:modules@0.4.2
+universe:react-bootstrap@0.24.0
 url@1.0.5
 webapp@1.2.3
 webapp-hashing@1.0.5

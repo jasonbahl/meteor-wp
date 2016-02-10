@@ -97,3 +97,7 @@ npm-container
 
 # Extremely helpful tools for debugging and understanding what's happening in a Meteor application
 meteortoys:allthings
+
+# Bootstrap Elements as React Components
+# See: https://react-bootstrap.github.io/components.html
+universe:react-bootstrap
